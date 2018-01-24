@@ -16,7 +16,7 @@ use think\Db;
 use think\Request;
 
 class Friends extends Base
-{
+    {
     public $friendMode;
 
     public function _initialize()
@@ -144,5 +144,14 @@ class Friends extends Base
 
     }
 
+    //个人中心
+    public function center(){
+        return $this->fetch();
+    }
+
+    //个人施工进度
+    public function jindu(){
+        return $this->fetch();
+    }
 
 }

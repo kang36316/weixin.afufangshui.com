@@ -122,5 +122,8 @@ class MpFriends extends Model
         $this->save(['last_time'=>time()],['openid'=>$msgData['FromUserName']]);
     }
 
+    public function center(){
+        return $this->fetch();
+    }
 
 }
